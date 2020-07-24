@@ -1,0 +1,61 @@
+.examples {
+    @media screen and (max-width: 1199px) {
+        display: none;
+      }
+}
+
+// example work Примеры работ 
+.examples {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+  &-title {
+      margin-bottom: 50px;
+      text-align: center;
+
+  }
+
+  &-list {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+  }
+
+  &-item {
+      position: relative;
+      margin-right: 15px;
+      margin-left: 15px;
+      &:last-child {
+          margin-right: 0;
+      }
+  }
+
+  &-link {
+      position: absolute;
+      bottom:0;
+      right: 0;
+      background-color: rgba(47, 48, 58, 0.8);
+      color: $primaryWhiteColor;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: inline-block;
+      width: 370px;
+      height: 70px;
+      text-align: center;
+      padding-top: 27px;
+      padding-bottom: 27px;
+      transition: $cubicBezier;
+          &:hover, &:focus {
+              color: $accentColor;
+          }
+      
+  }
+}

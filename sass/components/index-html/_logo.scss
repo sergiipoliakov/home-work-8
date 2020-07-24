@@ -1,0 +1,28 @@
+.logo {
+    color: $accentColor ;
+    font-family:$secondFontFamily;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+  }
+
+.logo-link {
+    text-decoration: none;
+  }
+  .logo-black{
+    color: $primaryTextColor;
+    font-family:$secondFontFamily;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+  }
+  .logo-white {
+    color: $primaryWhiteColor;
+    font-family:$secondFontFamily;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+  }

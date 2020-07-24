@@ -1,0 +1,124 @@
+.team-container {
+    
+    background-color: $secondaryBgCol;
+    text-align: center;
+}
+
+.picture{
+    width: 339px;
+}
+.team {
+     
+    &-title {
+        margin: 0;
+        padding-top: 60px;
+        padding-bottom: 30px;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 33px;
+        color: $primaryTextColor;
+        letter-spacing: 0.03em;
+    }
+
+    &-list {
+        @extend %list;
+         padding-bottom: 60px;
+         background-color: red;
+
+        @media screen and(min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;     
+        }
+    
+        @media screen and(min-width: 1200px) {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin: -15px;
+        }
+    }
+
+
+    &-item {
+        
+        
+        background-color: $primaryWhiteColor;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px 
+        rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+        border-radius: 0px 0px 4px 4px;
+
+
+        text-align: center;
+    
+
+        @media screen and(min-width: 768px) {
+            width: calc((100% - 4 * 15px) / 2);
+            margin: 15px;
+              
+        }  
+        
+        @media screen and(min-width: 1200px) {
+            width: calc((100% - 8 * 10px) / 4);
+            margin: 10px;      
+        }
+    
+        &:not(:last-child) {
+            @media screen and (max-width: 767px) {
+              margin-bottom: 15px;
+            }
+        }       
+    }
+}
+
+.team-social {
+    
+    &-list {
+        @extend %list;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 206px;
+        height: 44px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 24px;
+        list-style: none;
+        padding: 0;
+
+    }
+    &-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $primaryWhiteColor;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        margin-right: 10px;
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover, &:focus {
+            background-color: $accentColor;
+            color: $primaryWhiteColor;
+            transition: $cubicBezier;  
+        }
+        }
+        &-link {
+            display: flex;
+            fill: $iconColor;
+            width: 44px;
+            height: 44px;
+            padding: 12px;
+            border-radius: 50%;
+            transition: $cubicBezier;
+    
+                &:hover, &:focus {
+                    fill: $primaryWhiteColor;
+                }
+            }
+    
+
+}

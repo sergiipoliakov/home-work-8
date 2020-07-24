@@ -1,0 +1,100 @@
+.overlay {
+   text-align: center;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   background-image: linear-gradient(to right,
+     rgba(47, 48, 58, 0.8),
+     rgba(47, 48, 58, 0.8)),
+     url('../image/header-mob.jpg');
+}
+
+     @media(min-resolution: 2dppx) {
+        .overlay {
+           background-image: 
+           linear-gradient(to right,
+           rgba(47, 48, 58, 0.8),
+           rgba(47, 48, 58, 0.8)),
+           url(../image/header-mob@2x.jpg);
+        }
+     }
+     @media(min-width: 481px) {
+        .overlay {
+           
+           background-image: 
+           linear-gradient(to right,
+           rgba(47, 48, 58, 0.8),
+           rgba(47, 48, 58, 0.8)),
+           url(../image/header-tab.jpg);
+        }
+
+        @media(min-resolution: 2dppx) {
+         .overlay {
+            
+            background-image: 
+            linear-gradient(to right,
+            rgba(47, 48, 58, 0.8),
+            rgba(47, 48, 58, 0.8)),
+            url(../image/header-tab@2x.jpg);
+         }
+        }
+     }
+
+     @media(min-width: 1200px) {
+      .overlay {
+         background-image: 
+         linear-gradient(to right,
+         rgba(47, 48, 58, 0.8),
+         rgba(47, 48, 58, 0.8)),
+         url(../image/header-desc.jpg);
+      }
+
+      @media(min-resolution: 2dppx) {
+         .overlay {
+            background-image: 
+            linear-gradient(to right,
+            rgba(47, 48, 58, 0.8),
+            rgba(47, 48, 58, 0.8)),
+            url(../image/header-desc@2x.jpg);
+         }
+      }
+     }
+
+
+.hero {
+   
+    &-title {
+        margin: 0;
+         padding-top: 118px;
+         padding-bottom: 30px;
+         font-weight: 900;
+        font-size: 26px;
+        line-height: 1.75;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: $primaryWhiteColor;
+
+        @media screen and(min-width: 1200px) {
+         font-size: 44px;
+         line-height: 60px;
+           
+        }
+     }
+
+     &-button {
+        width: 200px;
+        height: 50px;
+        margin: 0;
+        margin-bottom: 118px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1.9px;
+        border: none;
+        border-radius: 4px;
+        color: $primaryWhiteColor;
+        background-color: $accentColor;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+
+     }
+}
